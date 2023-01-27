@@ -1,0 +1,17 @@
+cff-version 1.0.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "De Coster"
+  given-names: "Valentijn"
+  orcid: "https://orcid.org/0000-0003-1411-9005"
+- family-names: "Poelman"
+  given-names: "Hilde"
+  orcid: "https://orcid.org/0000-0003-4267-7397"
+- family-names: "Galvita"
+  given-names: "Vladimir V."
+  orcid: "https://orcid.org/0000-0001-9205-7917"
+title: "ME(XAS)-PSD Analysis Toolbox"
+version: 1.0.0
+doi: 10.5281/zenodo.8475.svg
+date-released: 2023-01-27
+url: "https://github.com/ValentijnDeCoster/ME"
