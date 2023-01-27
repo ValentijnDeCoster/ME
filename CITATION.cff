@@ -12,6 +12,6 @@ authors:
   orcid: "https://orcid.org/0000-0001-9205-7917"
 title: "ME(XAS)-PSD Analysis Toolbox"
 version: 1.0.0
-doi: 10.5281/zenodo.8475.svg
+doi: 10.5281/zenodo.8475
 date-released: 2023-01-27
 url: "https://github.com/ValentijnDeCoster/ME"
