@@ -1,0 +1,108 @@
+****************************
+ME(XAS)-PSD Analysis Toolbox (LCT, Ghent University)
+****************************
+
+
+This software performs phase-sensitive detection (PSD) analysis and kinetic differentiation of time-resolved 
+modulation-exciatation (ME) characterization data.
+
+Contact name	( Valentijn.DeCoster@UGent.be; Hilde.Poelman@UGent.be )
+ZAP name	( Vladimir.Galvita@UGent.be )
+Website		( https://www.lct.ugent.be/; http://www.ugent.be/m-f/en )
+
+Download	( XXXX To do )
+
+
+-------------------------------------------------------------------------------
+
+1. ABSTRACT
+-----------
+
+The functions and scripts in this software package (MATLAB) perform phase-sensitive detection (PSD) analysis of a 
+matrix of time-resolved modulation-exciatation (ME) characterization data within a pre-determined reversible regime. 
+Notably, it averages the given periods in an incremental or decremental fashion, and provides the option to perform PSD 
+with an adapted demodulation index, i.e. going beyond the fundamental frequency. It additionally includes analysis codes
+to perform kinetic differentiation (determination of in-phase angles) of the generated phase-resolved spectra.
+
+
+2. SOFTWARE DEPENDENCIES
+------------------------
+
+All functions and scripts were written in the MATLAB environment, using version 9.7.0.1190202 (R2019b). 
+For optimal performance, the use of MATLAB version 9.7.0.1190202 (R2019b) or higher is recommended.
+
+
+3. THE FILES YOU SHOULD GET
+---------------------------
+
+
+PSD.m
+avgXASperiods.m
+PSD_increasingperiods.m
+PSD_decreasingperiods.m
+PSD_data_noplot.m
+PSD_data.m
+getPSDdata_increaspingperiods.m
+getPSDdata_increaspingperiods_noplot.m
+KineticDiffMEXAS.m
+Description_ME_PSD_Codes_LCT.docx
+
+
+4. GETTING STARTED
+------------------
+
+
+To get started with the software, the user should first read the manual/gudelines on these codes in the attached document "Description_MES_PSD_Codes_LCT.docx", and then
+copy the necessary MATLAB functions in an accessible directory.
+Further, it is suggested users possess a modulation-excitation dataset, MEXAS/MEDRIFTS/MEXRD..., collected in a datamatrix wherein the rows represent spectra
+collected at a certain time instance and every column corresponds to measurements as a function of time at a certain abscissa value (e.g. energy, wavenumber, Bragg
+diffraction angle). Prefereably, this dataset only contains the reversible regime of the ME data. This data should be copied in the same directory as the MATLAB functions.
+Finally, users should apply the PSD_increasingperiods.m and the KineticDiffMEXAS.m functions in accordance with their decription in "Description_MES_PSD_Codes_LCT.docx".
+
+
+5. KNOWN LIMITATIONS/BUGS
+-------------------------
+
+PSD_decreasingperiods.m tends to stop analysis at the penultimate period, and not the final one.
+
+
+6. CHANGE LOG
+-------------
+
+[here you can list important changes between different versions]
+
+
+6. OPEN SOURCE LICENSE - BSD License 2.0
+-----------------------------------------
+Copyright 2022 by Laboratory for Chemical Technology, Ghent University
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1.  Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+2.  Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+3.  Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+MATLAB is a registered trademark of The MathWorks, Inc.
+
+
+7. CONTACTING THE AUTHOR(s)
+---------------------------
+
+We would very much appreciate hearing from you if you use the ME(XAS)-PSD Analysis Toolbox and find problems,
+or if you can think of ways it could be improved - and even (or is that
+'especially'?) if you just think it's great. Even if the facility you would
+like to see appears to be of interest only to you, tell us about it - you'd be
+surprised how many ideas in that class have a much wider appeal.
+
+See above for further contact information.
+
+We read and consider all mail we receive, even though we may not have time
+to reply
+
+
+8. ACKNOWLEDGEMENTS
+-------------------
+
+V.D.C. acknowledges a personal grant from the Research Fund of Ghent University (BOF; 01D00719) and financial support from the Fund for Scientific Research Flanders (FWO Flanders) through a long research stay abroad grant (V431022N).
